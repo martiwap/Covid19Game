@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Defeat COVID-19</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="covidGame.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="mainBack">
+    <div class="main">
+      <h2>Defeat COVID-19</h2>
+      <img id="image_virus" src="virus2-removebg-preview.png" />
+      <img id="image_virusred" src="secondVirus-removebg-preview.png" />
+      <img id="image_tubeblue" src="tubeblue-removebg-preview.png" />
+      <img id="image_tubepink" src="tubepink-removebg-preview.png" />
+      <img id="image_tubegreen" src="tubegreen-removebg-preview.png" />
+      <img id="image_tubeviolet" src="tubesmile-removebg-preview.png" />
+      <img id="image_player" src="char2-removebg-preview.png" />
+
+      <div class="showScore">Score : <span id="score"></span></div>
+      <p class="info">
+        Use the arrow keys to move the player left and right.<br />
+        Collect as many vaccins as you can, but be careful not to catch the
+        virus! <br />He is mean and fast (this bastard!).
+      </p>
+      <canvas id="gameScreen" width="1000" height="700" style="background: url('lab2.png')">
+      </canvas>
+      <p class="info">This little game has been made for me to practise and to have a little bit of fun. <br />
+        If you like it or dislike it, please feel free to send me your feedback and opinions at
+        <i>martinanatale93@gmail.com</i>
+        <br />
+        Thank you ;)</p>
+      <p class="info">
+        If you can afford to donate to support the UK NHS or the Italian National Health System dealing with CoronaVirus
+        emergency, click on one of the buttons below.
+        <br />
+        <button class="btn"
+          onclick="openInNewTab('https://www.justgiving.com/campaign/NHScharities-COVID19URGENTAPPEAL');">SUPPORT
+          UK NHS</button>
+        <button class="btn" onclick="openInNewTab('https://italianonprofit.it/donazioni-coronavirus/?lang=e');">SUPPORT
+          ITALIAN
+          NHS</button>
+      </p>
+    </div>
+  </div>
+
+  <script src="covidGame.js" type="text/javascript"></script>
+  <script>
+    function openInNewTab(url) {
+      var win = window.open(url, '_blank');
+      win.focus();
+    }
+  </script>
+</body>
+
+</html>
